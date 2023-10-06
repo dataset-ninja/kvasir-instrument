@@ -13,37 +13,37 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "Kvasir Instrument"
+PROJECT_NAME_FULL: str = "Kvasir Instrument: A Gastrointestinal Instrument Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.Custom(url="https://datasets.simula.no/kvasir-instrument/")
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
+CATEGORY: Category = Category.Medical(extra=Category.Robotics(), sensitive_content=True)
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(), CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation(), AnnotationType.ObjectDetection()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2020-08-14"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://datasets.simula.no/kvasir-instrument/"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 6765217
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/kvasir-instrument"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://datasets.simula.no/downloads/kvasir-instrument.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,15 +51,15 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://arxiv.org/abs/2011.08065v1"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"Repository":"https://github.com/DebeshJha/Kvasir-Instrument", "OSF Repository": "https://osf.io/kp6my"}
 
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+CITATION_URL: Optional[str] = "https://datasets.simula.no/kvasir-instrument/"
+AUTHORS: Optional[List[str]] = ["Debesh Jha", "Sharib Ali", "Krister Emanuelsen", "Steven A. Hicks", "Vajira Thambawita", "Enrique Garcia-Ceja", "Michael A. Riegler", "Thomas de Lange", "Peter T. Schmidt", "Håvard D. Johansen", "Dag Johansen" , "Pål Halvorsen"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "NOR-SWE-UK joint research group"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://link.springer.com/chapter/10.1007/978-3-030-67835-7_19"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
