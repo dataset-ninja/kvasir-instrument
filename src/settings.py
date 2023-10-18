@@ -53,7 +53,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://arxiv.org/abs/2011.08065v1"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"Repository":"https://github.com/DebeshJha/Kvasir-Instrument", "OSF Repository": "https://osf.io/kp6my"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https://github.com/DebeshJha/Kvasir-Instrument", "OSF Repository": "https://osf.io/kp6my"}
 
 CITATION_URL: Optional[str] = "https://datasets.simula.no/kvasir-instrument/"
 AUTHORS: Optional[List[str]] = ["Debesh Jha", "Sharib Ali", "Krister Emanuelsen", "Steven A. Hicks", "Vajira Thambawita", "Enrique Garcia-Ceja", "Michael A. Riegler", "Thomas de Lange", "Peter T. Schmidt", "Håvard D. Johansen", "Dag Johansen" , "Pål Halvorsen"]
