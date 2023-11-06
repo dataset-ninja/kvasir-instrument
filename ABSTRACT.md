@@ -8,7 +8,6 @@ Regarding the annotation strategy, the authors describe uploading the dataset to
 
 <img src="https://github.com/dataset-ninja/gland-segmentation/assets/78355358/00f77e7a-4b35-4a97-9b65-d74e61397d47" alt="image" width="600">
 
-<span style="font-size: smaller; font-style: italic;"> The First two rows represent frames with
-biopsy forceps, the middle row consists of the metallic clip, the fourth row is a radiofrequency ablation probe and the last row depicts the crescent and hexagonal-shaped snares for polyp removal.</span>
+<span style="font-size: smaller; font-style: italic;"> The First two rows represent frames within biopsy forceps, the middle row consists of the metallic clip, the fourth row is a radiofrequency ablation probe and the last row depicts the crescent and hexagonal-shaped snares for polyp removal.</span>
 
 Annotation was performed in a three-step strategy: initial labeling by two experienced research assistants, cross-validation by two experienced GI experts, and final validation based on expert feedback. The Kvasir-Instrument dataset encompasses 590 frames featuring various GI endoscopy tools, annotated with bounding boxes and segmentation masks. Most tools are small to medium-sized, and the dataset is made publicly available, including original images, masks, bounding box information, and a visualization script for researchers to access and use.
