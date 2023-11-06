@@ -57,6 +57,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https:/
 
 CITATION_URL: Optional[str] = "https://datasets.simula.no/kvasir-instrument/"
 AUTHORS: Optional[List[str]] = ["Debesh Jha", "Sharib Ali", "Krister Emanuelsen", "Steven A. Hicks", "Vajira Thambawita", "Enrique Garcia-Ceja", "Michael A. Riegler", "Thomas de Lange", "Peter T. Schmidt", "Håvard D. Johansen", "Dag Johansen" , "Pål Halvorsen"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["debesh@simula.no"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "NOR-SWE-UK joint research group"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://link.springer.com/chapter/10.1007/978-3-030-67835-7_19"
@@ -110,6 +111,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
