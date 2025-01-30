@@ -1,6 +1,6 @@
 Dataset **Kvasir Instrument** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/kxe0sts2ntlffee1xx09o/kvasir-instrument-DatasetNinja.tar?rlkey=ssnx8e7xzf9ncz1sjgjghmu5s&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzI0NzZfS3Zhc2lyIEluc3RydW1lbnQva3Zhc2lyLWluc3RydW1lbnQtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiOG91aWQ4UTFyS01ZUHd4V2k3dHVvdHhNb013dXVMN0loY25YNEY2NjhEUT0ifQ==)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
